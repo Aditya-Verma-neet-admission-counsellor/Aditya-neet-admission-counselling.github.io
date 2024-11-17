@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET Admission & Counselling Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>NEET Admission & Counselling Services</h1>
+    <p>Welcome! I'm Aditya Verma from GMC Buldhana, 2024 batch.</p>
+</header>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <p>We offer affordable counseling for NEET admissions. Choose the option that best fits your needs.</p>
+
+    <div class="card">
+        <h3>State Quota Counselling</h3>
+        <p>Price: 200 INR</p>
+    </div>
+
+    <div class="card">
+        <h3>All India Counselling</h3>
+        <p>Price: 200 INR</p>
+    </div>
+
+    <div class="card">
+        <h3>Both Counselling Services</h3>
+        <p>Price: 300 INR</p>
+    </div>
+</section>
+
+<section class="contact">
+    <p><strong>For inquiries, contact me at: adityaverma2141@gmail.com</strong></p>
+</section>
+
+<section class="message-form">
+    <h2>Leave a Message</h2>
+    <form id="messageForm">
+        <textarea id="messageText" placeholder="Write your message here..." required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<script>
+    document.getElementById("messageForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Message submitted! (Currently, this form doesn't save messages.)");
+        document.getElementById("messageForm").reset();
+    });
+</script>
+
+</body>
+</html>
