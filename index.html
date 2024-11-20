@@ -39,8 +39,10 @@
 
 <section class="message-form">
     <h2>Leave a Message</h2>
-    <form id="messageForm">
-        <textarea id="messageText" placeholder="Write your message here..." required></textarea><br>
+    <form action="https://formspree.io/f/mwpkqbpq" method="POST">
+        <textarea name="message" placeholder="Write your message here..." required></textarea><br>
+        <input type="email" name="_replyto" placeholder="Your email (optional)" style="width:100%;padding:8px;margin:10px 0;" />
+        <input type="hidden" name="_next" value="thankyou.html" />
         <button type="submit">Submit</button>
     </form>
 </section>
